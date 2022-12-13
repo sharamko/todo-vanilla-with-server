@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script defer src="./notesApp.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        creatApp(document.querySelector('#notes-app-my'), 'Мои Дела', 'my');
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container mb-5">
+      <nav class="nav nav-tabs">
+        <a class="nav-link active" aria-current="page" href="index.html"
+          >Мои дела</a
+        >
+        <a class="nav-link" href="dad.html">Дела папы</a>
+        <a class="nav-link" href="mom.html">Дела мамы</a>
+      </nav>
+    </div>
+    <div id="notes-app-my" class="container"></div>
+  </body>
+</html>
